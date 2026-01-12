@@ -101,31 +101,11 @@ If the build completes successfully and the site looks correct locally, you're r
 
 ## Method 1: Manual deployment with yarn deploy
 
-This method is useful for quick, one-off deployments or when you want full control over when your site is published.
+This method is useful for quick, one-off deployments or when you want full control over when your site is published. The `yarn deploy` command will automatically create a `gh-pages` branch in your repository if one doesn't already exist.
 
-### Create the gh-pages branch
-
-GitHub Pages requires a dedicated branch to serve your site. If you don't already have a `gh-pages` branch, you'll need to create one.
-
-1. Open your terminal and navigate to your project directory.
-
-2. Create and switch to a new `gh-pages` branch:
-
-   ```bash
-   git checkout -b gh-pages
-   ```
-
-3. Push the new branch to GitHub:
-
-   ```bash
-   git push -u origin gh-pages
-   ```
-
-4. Switch back to your main branch:
-
-   ```bash
-   git checkout main
-   ```
+:::info
+`gh-pages` is the default branch name that Docusaurus uses for deployment. You can customize this by setting the `deploymentBranch` property in your `docusaurus.config.ts` file or using the `DEPLOYMENT_BRANCH` environment variable. When you configure GitHub Pages later in this tutorial, you'll need to select whichever branch name you're using for deployment.
+:::
 
 ### Set up environment variables
 
