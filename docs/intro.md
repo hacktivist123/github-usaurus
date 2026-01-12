@@ -283,7 +283,7 @@ If you've already set up Method 1 and want to switch to GitHub Actions, you can 
 
 3. Once the workflow completes successfully, your site will be live at `https://your-github-username.github.io/your-repository-name/`.
 
-4. Click the **Visit site** link in the workflow output or navigate directly to your site's URL.
+4. Click the generated link on the "Deploy to GitHub Pages" workflow or navigate directly to your site's URL.
 
    ![GitHub Actions successful deployment with site URL](../static/img/github-actions-tab.png)
 
