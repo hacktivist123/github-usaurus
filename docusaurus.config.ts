@@ -15,14 +15,14 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://philstollery.github.io',
+  url: 'https://hacktivist123.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/github-usaurus/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'philstollery', // Usually your GitHub org/user name.
+  organizationName: 'hacktivist123', // Usually your GitHub org/user name.
   projectName: 'github-usaurus', // Usually your repo name.
   trailingSlash: false,
 
@@ -45,7 +45,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/PhilStollery/github-usaurus/',
+            'https://github.com/hacktivist123/github-usaurus/',
         },
         blog: {
           showReadingTime: true,
@@ -86,7 +86,7 @@ const config: Config = {
         },
         {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/PhilStollery/github-usaurus',
+          href: 'https://github.com/hacktivist123/github-usaurus',
           label: 'GitHub',
           position: 'right',
         },
@@ -126,7 +126,7 @@ const config: Config = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/PhilStollery/github-usaurus/',
+              href: 'https://github.com/hacktivist123/github-usaurus/',
             },
           ],
         },
