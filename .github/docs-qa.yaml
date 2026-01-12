@@ -1,0 +1,35 @@
+name: QA Checks
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  test-build:
+    name: Test Build
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+    - run: corepack enable
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version-file: .nvmrc
+        cache: yarn
+
+    - name: Install Dependencies
+      run: |
+        yarn install
+
+    - name: Build Docusaurus
+      id: build-docusaurus
+      run: |
+        yarn build
+
+    - name: Alex Lint
+      id: alex-lint
+      if: steps.build-docusaurus.outcome == 'success'
+      run: |
+        yarn docs:alex
